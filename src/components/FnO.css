@@ -1,0 +1,80 @@
+/* FnO.css */
+
+.fno-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.refresh-button {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  background-color: #0056b3;
+}
+
+.fno-section {
+  margin-bottom: 30px;
+}
+
+.fno-section h3 {
+  color: #333;
+  margin-bottom: 12px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.stock-item {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.stock-info p {
+  margin: 4px 0;
+}
+
+.change-bar {
+  height: 6px;
+  border-radius: 3px;
+  margin-top: 6px;
+  transition: width 0.4s ease;
+}
+
+.positive {
+  border-left: 4px solid green;
+}
+
+.negative {
+  border-left: 4px solid red;
+}
+
+.loading,
+.error {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}

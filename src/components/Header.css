@@ -1,0 +1,40 @@
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.5rem auto 2rem;
+  padding: 0 1rem;
+}
+
+.nav-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #4facfe, #00f2fe); /* modern gradient */
+  color:black;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 130px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #00c3ff, #4facfe);
+}
+
+.nav-btn.active {
+  outline: 3px solid #00f2fe;
+  transform: scale(1.05);
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #333;
+}

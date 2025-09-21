@@ -1,0 +1,202 @@
+/* General container */
+.home-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Fade-in animation for the title */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Slide-in animation for the messages */
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+/* Keyframe for the fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Keyframe for the slide-in animation */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Button Styles (Optional) */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+/* General container with background and flex layout */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating title animation */
+.title {
+  font-size: 3rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: floatIn 2s ease-out forwards;
+}
+
+/* Message text with subtle slide-in */
+.message {
+  font-size: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInUp 1.5s ease-out 1s forwards;
+}
+
+/* Call-to-action buttons */
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  animation: fadeInButtons 2s ease-out 2s forwards;
+}
+
+.cta-buttons button {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.cta-buttons button:hover {
+  transform: scale(1.1);
+  background-color: #45a049;
+}/* General container with background and flex layout */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating title animation */
+.title {
+  font-size: 3rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: floatIn 2s ease-out forwards;
+}
+
+/* Message text with subtle slide-in */
+.message {
+  font-size: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInUp 1.5s ease-out 1s forwards;
+}
+
+/* Call-to-action buttons */
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  animation: fadeInButtons 2s ease-out 2s forwards;
+}
+
+.cta-buttons button {
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.cta-buttons button:hover {
+  transform: scale(1.1);
+  background-color: #45a049;
+}
+
+/* Background animation */
+@keyframes floatIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-in effect for the message */
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button fade-in effect */
+@keyframes fadeInButtons {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add a unique background animation to create movement */
+@keyframes floatingBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-container {
+  animation: floatingBackground 10s ease-in-out infinite;
+  background-size: 200% 200%;
+}

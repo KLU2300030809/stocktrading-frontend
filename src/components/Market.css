@@ -1,0 +1,17 @@
+.market-container {
+  padding: 20px;
+}
+
+.stock-chart {
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.stock-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}

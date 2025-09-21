@@ -1,0 +1,54 @@
+.stocks-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.stocks-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.stocks-card {
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.stocks-card:hover {
+  transform: scale(1.03);
+}
+
+.stock-logo {
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Increase stock symbol size */
+.stocks-card p strong {
+  font-size: 25px; /* Larger size for the symbol */
+}
+
+/* Decrease the price and other text size */
+.stocks-card p {
+  font-size: 12px; /* Smaller size for other text */
+}

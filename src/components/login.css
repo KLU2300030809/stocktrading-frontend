@@ -1,0 +1,95 @@
+/* Animated Gradient Background for Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  background-size: 200% 200%;
+  animation: floatingBackground 10s ease-in-out infinite;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Floating Background Animation */
+@keyframes floatingBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Login Form with Entry Animation */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Title */
+.login-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Inputs */
+.login-form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Submit Button */
+.login-form button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.login-form button:hover {
+  transform: scale(1.05);
+  background-color: #45a049;
+}
+
+/* Optional link for forgot password or registration */
+.login-link {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.link-text {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
