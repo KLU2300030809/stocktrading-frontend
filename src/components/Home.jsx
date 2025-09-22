@@ -1,4 +1,4 @@
-import './Home.css'; // Optional styling
+import './home.css'; // Optional styling
 
 export default function Home({ setPage, user }) {
   return (

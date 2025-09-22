@@ -8,7 +8,7 @@ import Login from "./components/Login";
 import Market from "./components/Market";
 import Tutorial from "./components/Tutorial";
 import UserProfile from "./components/UserProfile";
-import Chatbot from "./components/Chatbot";
+import Chatbot from "./components/ChatBot";
 import FnO from "./components/FnO"; // ✅ Import FnO Component
 import Watchlist from "./components/Watchlist"; // ✅ Import Watchlist Component
 

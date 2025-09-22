@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-function Chatbot({ onSendMessage = () => {} }) {
+function ChatBot({ onSendMessage = () => {} }) {
   const [messages, setMessages] = useState([
     {
       sender: "bot",
@@ -158,4 +158,4 @@ function Chatbot({ onSendMessage = () => {} }) {
   );
 }
 
-export default Chatbot;
+export default ChatBot;
